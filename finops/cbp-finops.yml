@@ -1,0 +1,68 @@
+name: CBP FinOps
+description: >-
+  U.S. Customs and Border Protection APIs and trade systems are provided as
+  free government services. There are no direct API usage fees charged to trade
+  partners or developers. Cost considerations are primarily indirect: staffing
+  for certification processes, integration development, compliance software,
+  and the customs duties/fees collected by CBP on behalf of the U.S. government
+  (which are separate from API access costs).
+costModel: Free government service — no API usage fees
+directCosts:
+  - item: AESDirect WebLink API Access
+    cost: Free
+    notes: >-
+      No fee for API access. Certification is required but there is no
+      application fee charged by CBP.
+
+  - item: ACE Secure Data Portal Account
+    cost: Free
+    notes: >-
+      Account registration and portal access are free. Third-party ABI
+      software vendors may charge their own licensing fees for broker
+      software that interfaces with ACE via ABI/EDI.
+
+  - item: eAPIS Account
+    cost: Free
+    notes: >-
+      No fee for eAPIS registration or manifest submission.
+
+indirectCosts:
+  - item: ABI Certification Software
+    notes: >-
+      Licensed customs brokers and self-filers must use certified ABI
+      software (provided by third-party vendors) to connect to ACE via EDI.
+      Third-party ABI software licensing costs vary by vendor and volume.
+
+  - item: ACE Portal Third-Party Software
+    notes: >-
+      Many importers and brokers use commercial customs management software
+      (e.g., Magaya ACeLink, CustomsCity) that integrates with ACE. These
+      products carry licensing fees independent of CBP's own costs.
+
+  - item: AESWebLink Certification Effort
+    notes: >-
+      Software vendors must complete CBP's AESWebLink certification process,
+      which requires internal development and testing resources but incurs
+      no direct CBP fee.
+
+governmentRevenueContext:
+  description: >-
+    CBP is one of the largest revenue-collecting agencies in the U.S.
+    federal government. It collects customs duties, excise taxes, and
+    fees on imported goods on behalf of the U.S. Treasury. These charges
+    (tariffs, Harbor Maintenance Fees, Merchandise Processing Fees) are
+    paid by importers as part of customs entry filings processed through
+    ACE — they are separate from, but enabled by, the trade APIs described
+    in this catalog.
+  merchandiseProcessingFee:
+    description: >-
+      Ad valorem fee of 0.3464% of the entered value of imported merchandise,
+      with a minimum of $31.67 and a maximum of $614.35 per entry (2025
+      rates; adjusted periodically). Filed as part of the ACE entry summary.
+    url: https://www.cbp.gov/trade/programs-administration/entry-summary/mpf
+
+resources:
+  - type: FeeSchedule
+    url: https://www.cbp.gov/trade/programs-administration/entry-summary/mpf
+  - type: ACEPortalFAQ
+    url: https://www.cbp.gov/trade/automated/ace-faq

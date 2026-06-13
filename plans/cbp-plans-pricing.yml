@@ -1,0 +1,68 @@
+name: CBP Plans and Pricing
+description: >-
+  U.S. Customs and Border Protection APIs are provided as a public government
+  service at no cost to authorized users. There are no subscription tiers or
+  API usage fees. However, access to production systems requires advance
+  certification or account registration depending on the API.
+plans:
+  - name: Free — AESDirect WebLink (Certified Partners)
+    description: >-
+      Free access for software vendors and Internet application providers that
+      complete the CBP AESWebLink certification process. Allows certified
+      partners to submit and query Electronic Export Information (EEI) on
+      behalf of their users via HTTP POST.
+    url: https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api
+    price: Free
+    authentication: AESWebLink Certification required
+    rateLimit: Not publicly documented
+    features:
+      - Submit EEI filings to AESDirect
+      - Query EEI filing status
+      - Test/training environment access
+      - Production environment access (post-certification)
+
+  - name: Free — ACE Secure Data Portal (Registered Trade Users)
+    description: >-
+      Free web-based access to the Automated Commercial Environment for
+      importers, exporters, brokers, carriers, and other trade participants.
+      Requires registration with CBP. Provides access to ACE Reports, account
+      management, and entry/manifest data.
+    url: https://www.cbp.gov/trade/automated/how-to-use-ace/portal-applying
+    price: Free
+    authentication: ACE Portal account registration required (CBP approval)
+    rateLimit: Not publicly documented
+    features:
+      - Real-time trade transaction access
+      - ACE Reports for import/export activity
+      - Financial account management
+      - Manifest submission and tracking
+
+  - name: Free — ABI/EDI (Licensed Filers)
+    description: >-
+      Free EDI connectivity for licensed customs brokers and self-filers
+      transmitting ANSI X12 or UN/EDIFACT messages directly to ACE via the
+      Automated Broker Interface. Requires ABI participant certification.
+    url: https://www.cbp.gov/trade/automated/catair
+    price: Free
+    authentication: ABI certification and connectivity agreement required
+    rateLimit: Not publicly documented
+    features:
+      - Entry summary transmission
+      - Cargo release requests
+      - Import/export manifest filing
+      - Partner Government Agency (PGA) data submission
+
+  - name: Free — eAPIS (Carriers and Private Aviation)
+    description: >-
+      Free web portal access for commercial carriers and private aircraft
+      operators submitting advance passenger and crew manifest data to CBP.
+      On-screen entry, XML upload, or EDI (PAXLST) methods supported.
+    url: https://eapis.cbp.dhs.gov
+    price: Free
+    authentication: Account registration with eAPIS
+    rateLimit: Not publicly documented
+    features:
+      - Submit inbound/outbound passenger manifests
+      - Submit crew manifests
+      - Receive submission confirmation numbers
+      - Bulk XML and EDIFACT PAXLST submission

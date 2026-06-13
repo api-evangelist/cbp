@@ -1,0 +1,57 @@
+name: CBP Rate Limits
+description: >-
+  U.S. Customs and Border Protection does not publish formal rate limits for
+  its trade APIs. Access to production systems (AESDirect WebLink, ACE ABI/EDI,
+  eAPIS) is governed by certification and registration requirements rather than
+  programmatic rate enforcement. Throughput expectations are shaped by EDI
+  session limits and the operational requirements of the trade systems.
+rateLimits:
+  - api: AESDirect WebLink Inquiry API
+    limit: Not publicly documented
+    window: Not publicly documented
+    notes: >-
+      HTTP POST transactions only; GET not supported due to query-string length
+      limits. Access is restricted to CBP-certified third-party applications.
+      Rate limiting is not specified in public documentation; practical
+      throughput is negotiated during the AESWebLink certification process.
+    url: https://www.cbp.gov/trade/automated/aesdirect-weblink-inquiry-api
+
+  - api: AESDirect WebLink Submission API
+    limit: Not publicly documented
+    window: Not publicly documented
+    notes: >-
+      HTTP POST transactions only. Each submission requires a valid AES filing
+      context. Concurrent session and throughput limits are not published;
+      consult CBP during the certification process for any system capacity
+      constraints.
+    url: https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api
+
+  - api: ACE / ABI EDI
+    limit: Not publicly documented
+    window: Not publicly documented
+    notes: >-
+      EDI connectivity operates under a CBP-issued ABI certification. Message
+      throughput is bounded by the session parameters defined in the CATAIR
+      (CBP and Trade Automated Interface Requirements). Production capacity
+      is managed operationally by CBP's trade systems team.
+    url: https://www.cbp.gov/trade/automated/catair
+
+  - api: eAPIS
+    limit: Not publicly documented
+    window: Not publicly documented
+    notes: >-
+      eAPIS imposes no stated rate limits. Manifest submissions are event-driven
+      (one submission per flight/voyage departure or arrival). Bulk XML and
+      UN/EDIFACT PAXLST uploads are supported but no per-session throughput
+      caps are published.
+    url: https://www.cbp.gov/travel/travel-industry-personnel/advance-passenger-information-system
+
+  - api: CBP Public Data Portal
+    limit: Not publicly documented
+    window: Not publicly documented
+    notes: >-
+      The public data portal provides downloadable datasets (not a REST API
+      with programmatic endpoints). No rate limiting applies to dataset
+      downloads, though the portal is intended for statistical reporting use
+      rather than high-frequency data ingestion.
+    url: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal

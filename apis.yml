@@ -1,0 +1,172 @@
+aid: cbp
+name: CBP
+description: >-
+  U.S. Customs and Border Protection (CBP) is the nation's largest law
+  enforcement agency and a major revenue-collecting authority, responsible for
+  facilitating legitimate international trade and travel while enforcing trade
+  laws, collecting duties, and securing the border. CBP provides REST APIs and
+  EDI-based interfaces for trade data, import statistics, tariff schedules, ACE
+  reporting, and automated import/export manifests through the Automated
+  Commercial Environment (ACE), the Automated Export System (AES / AESDirect),
+  and the Advance Passenger Information System (APIS/eAPIS).
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/cbp/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - US Government
+  - Trade
+  - Customs
+  - Import
+  - Export
+  - Border Protection
+  - Tariff
+  - Manifest
+apis:
+  - aid: cbp:aesdirect-weblink-inquiry-api
+    name: AESDirect WebLink Inquiry API
+    description: >-
+      A web service that allows certified third-party applications to query
+      Electronic Export Information (EEI) filings previously submitted to
+      AESDirect via HTTP POST. Returns shipment status and filing data in
+      real-time from both a training/test environment and the production
+      environment.
+    humanURL: https://www.cbp.gov/trade/automated/aesdirect-weblink-inquiry-api
+    baseURL: https://trade.cbp.dhs.gov
+    tags:
+      - Export
+      - AES
+      - AESDirect
+      - Electronic Export Information
+    properties:
+      - type: Documentation
+        url: https://www.cbp.gov/trade/automated/aesdirect-weblink-inquiry-api
+      - type: TestEnvironment
+        url: https://trade-test.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/weblinkFilingInquiry
+      - type: ProductionEnvironment
+        url: https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/weblinkFilingInquiry
+
+  - aid: cbp:aesdirect-weblink-submission-api
+    name: AESDirect WebLink Submission API
+    description: >-
+      A web service that allows certified third-party Internet applications to
+      pass Electronic Export Information (EEI) data directly into AESDirect via
+      HTTP POST, eliminating double-entry for exporters and freight forwarders.
+      Requires AESWebLink certification before production access is granted.
+    humanURL: https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api
+    baseURL: https://trade.cbp.dhs.gov
+    tags:
+      - Export
+      - AES
+      - AESDirect
+      - Electronic Export Information
+      - Filing
+    properties:
+      - type: Documentation
+        url: https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api
+      - type: TestEnvironment
+        url: https://trade-test.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/createWeblinkFiling
+      - type: ProductionEnvironment
+        url: https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/createWeblinkFiling
+
+  - aid: cbp:ace-automated-commercial-environment
+    name: Automated Commercial Environment (ACE) — EDI / ABI
+    description: >-
+      The U.S. Single Window for import and export trade reporting. The
+      Automated Broker Interface (ABI) lets licensed customs brokers and
+      self-filers transmit entry summaries, cargo release requests, and manifest
+      data via ANSI X12 or UN/EDIFACT EDI. Technical requirements are
+      documented in the CBP and Trade Automated Interface Requirements (CATAIR).
+    humanURL: https://www.cbp.gov/trade/automated
+    baseURL: https://ace.cbp.gov
+    tags:
+      - Import
+      - Export
+      - ACE
+      - ABI
+      - EDI
+      - CATAIR
+      - Manifest
+    properties:
+      - type: Documentation
+        url: https://www.cbp.gov/trade/automated
+      - type: TechnicalDocumentation
+        url: https://www.cbp.gov/trade/automated/catair
+      - type: ImportManifestDocumentation
+        url: https://www.cbp.gov/trade/automated/how-to-use-ace/ace-import-manifest-documentation
+      - type: Portal
+        url: https://ace.cbp.gov
+
+  - aid: cbp:eapis-advance-passenger-information
+    name: eAPIS — Advance Passenger Information System
+    description: >-
+      A CBP web-based application for commercial and private carriers to
+      electronically submit inbound and outbound traveler manifest data.
+      Supports on-screen entry, bulk XML upload, and UN/EDIFACT PAXLST
+      electronic data interchange. Returns a submission confirmation number upon
+      successful delivery.
+    humanURL: https://www.cbp.gov/travel/travel-industry-personnel/advance-passenger-information-system
+    baseURL: https://eapis.cbp.dhs.gov
+    tags:
+      - Passenger
+      - Travel
+      - APIS
+      - eAPIS
+      - Manifest
+      - Aviation
+    properties:
+      - type: Documentation
+        url: https://www.cbp.gov/travel/travel-industry-personnel/advance-passenger-information-system
+      - type: Portal
+        url: https://eapis.cbp.dhs.gov
+
+  - aid: cbp:cbp-public-data-portal
+    name: CBP Public Data Portal
+    description: >-
+      A free public resource providing downloadable statistical datasets used to
+      generate charts and dashboards published on CBP.gov. Covers trade
+      statistics, enforcement data, traveler and conveyance statistics, drug
+      seizures, intellectual property rights seizures, and agriculture
+      enforcement data.
+    humanURL: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
+    baseURL: https://www.cbp.gov
+    tags:
+      - Statistics
+      - Trade Data
+      - Open Data
+      - Enforcement
+      - Datasets
+    properties:
+      - type: Documentation
+        url: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
+      - type: TradeStatistics
+        url: https://www.cbp.gov/newsroom/stats/trade
+
+common:
+  - type: Website
+    url: https://www.cbp.gov
+  - type: Documentation
+    url: https://www.cbp.gov/trade/automated
+  - type: GitHubOrg
+    url: https://github.com/US-CBP
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/customs-and-border-protection
+  - type: Blog
+    url: https://www.cbp.gov/newsroom
+  - type: Pricing
+    url: https://www.cbp.gov/trade/automated/ace-faq
+  - type: StatusPage
+    url: https://www.cbp.gov/trade/automated/ace-support
+  - type: X
+    url: https://x.com/CBP
+  - type: Plans
+    url: plans/cbp-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cbp-rate-limits.yml
+  - type: FinOps
+    url: finops/cbp-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
