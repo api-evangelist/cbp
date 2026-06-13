@@ -1,0 +1,107 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cbp": "https://www.cbp.gov/vocabulary#",
+    "aid": "cbp:apiId",
+    "baseURL": "cbp:baseURL",
+    "humanURL": "cbp:humanURL",
+
+    "AESDirect": "cbp:AESDirect",
+    "AES": "cbp:AutomatedExportSystem",
+    "ACE": "cbp:AutomatedCommercialEnvironment",
+    "ABI": "cbp:AutomatedBrokerInterface",
+    "eAPIS": "cbp:AdvancePassengerInformationSystem",
+    "CATAIR": "cbp:CustomsTradeAutomatedInterfaceRequirements",
+    "EEI": "cbp:ElectronicExportInformation",
+
+    "WebLinkInquiry": "cbp:WebLinkInquiry",
+    "WebLinkSubmission": "cbp:WebLinkSubmission",
+    "entryfileSummary": "cbp:EntrySummary",
+    "cargoRelease": "cbp:CargoRelease",
+    "importManifest": "cbp:ImportManifest",
+    "exportManifest": "cbp:ExportManifest",
+    "passengerManifest": "cbp:PassengerManifest",
+
+    "tariff": "cbp:TariffSchedule",
+    "duty": "cbp:CustomsDuty",
+    "tradeStatistics": "cbp:TradeStatistics",
+    "enforcement": "cbp:EnforcementData",
+
+    "Government": "schema:GovernmentOrganization",
+    "GovernmentService": "schema:GovernmentService",
+    "APIService": "schema:WebAPI"
+  },
+  "@type": "schema:WebAPI",
+  "@id": "https://www.cbp.gov/trade/automated",
+  "name": "U.S. Customs and Border Protection (CBP) APIs",
+  "description": "APIs and electronic data interchange interfaces for U.S. trade, customs, export, and border management systems including ACE, AESDirect, and eAPIS.",
+  "provider": {
+    "@type": "schema:GovernmentOrganization",
+    "@id": "https://www.cbp.gov",
+    "name": "U.S. Customs and Border Protection",
+    "url": "https://www.cbp.gov",
+    "sameAs": [
+      "https://x.com/CBP",
+      "https://www.linkedin.com/company/customs-and-border-protection",
+      "https://github.com/US-CBP"
+    ]
+  },
+  "documentation": "https://www.cbp.gov/trade/automated",
+  "termsOfService": "https://www.cbp.gov/trade/automated/ace-faq",
+  "offers": {
+    "@type": "schema:Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "CBP trade APIs are available to licensed customs brokers, certified third-party filers, and registered carriers at no direct cost; duties and fees apply to trade transactions."
+  },
+  "serviceEndpoint": [
+    {
+      "@type": "cbp:ServiceEndpoint",
+      "name": "AESDirect WebLink Inquiry API",
+      "url": "https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/weblinkFilingInquiry",
+      "description": "Query Electronic Export Information (EEI) filings submitted to AESDirect"
+    },
+    {
+      "@type": "cbp:ServiceEndpoint",
+      "name": "AESDirect WebLink Submission API",
+      "url": "https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/createWeblinkFiling",
+      "description": "Submit Electronic Export Information (EEI) data directly into AESDirect"
+    },
+    {
+      "@type": "cbp:ServiceEndpoint",
+      "name": "ACE / Automated Broker Interface",
+      "url": "https://ace.cbp.gov",
+      "description": "EDI-based interface for customs brokers and self-filers to transmit entry summaries, cargo release, and manifest data"
+    },
+    {
+      "@type": "cbp:ServiceEndpoint",
+      "name": "eAPIS — Advance Passenger Information System",
+      "url": "https://eapis.cbp.dhs.gov",
+      "description": "Submit inbound and outbound traveler manifest data via web entry, XML upload, or UN/EDIFACT PAXLST"
+    },
+    {
+      "@type": "cbp:ServiceEndpoint",
+      "name": "CBP Public Data Portal",
+      "url": "https://www.cbp.gov/newsroom/stats/cbp-public-data-portal",
+      "description": "Downloadable statistical datasets for trade, enforcement, traveler, and agriculture data"
+    }
+  ],
+  "keywords": [
+    "CBP",
+    "Customs",
+    "Border Protection",
+    "Trade",
+    "Import",
+    "Export",
+    "ACE",
+    "AES",
+    "AESDirect",
+    "ABI",
+    "eAPIS",
+    "CATAIR",
+    "EDI",
+    "Manifest",
+    "Tariff",
+    "US Government"
+  ]
+}

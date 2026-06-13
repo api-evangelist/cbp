@@ -1,0 +1,43 @@
+{
+  "aid": "cbp",
+  "url": "https://www.cbp.gov/newsroom",
+  "blogs": [
+    {
+      "title": "CBP Newsroom",
+      "url": "https://www.cbp.gov/newsroom",
+      "description": "Official U.S. Customs and Border Protection news, announcements, and updates covering trade enforcement, border security, and system changes to ACE, AES/AESDirect, and eAPIS.",
+      "tags": [
+        "Trade",
+        "Border Security",
+        "ACE",
+        "AES",
+        "eAPIS",
+        "Announcements"
+      ]
+    },
+    {
+      "title": "ACE System Notices and Updates",
+      "url": "https://www.cbp.gov/trade/automated/ace-support",
+      "description": "System status notices, maintenance windows, and technical updates for the Automated Commercial Environment (ACE) and related trade systems.",
+      "tags": [
+        "ACE",
+        "System Status",
+        "Maintenance",
+        "Trade"
+      ]
+    },
+    {
+      "title": "Trade Statistics and Data Portal",
+      "url": "https://www.cbp.gov/newsroom/stats",
+      "description": "Statistical releases and data portal updates covering trade volumes, enforcement actions, traveler statistics, drug seizures, and intellectual property rights enforcement.",
+      "tags": [
+        "Statistics",
+        "Trade Data",
+        "Enforcement",
+        "Open Data"
+      ]
+    }
+  ],
+  "created": "2026-06-13",
+  "modified": "2026-06-13"
+}
