@@ -43,7 +43,7 @@ apis:
     properties:
       - type: Documentation
         url: https://www.cbp.gov/trade/automated/aesdirect-weblink-inquiry-api
-      - type: TestEnvironment
+      - type: Sandbox
         url: https://trade-test.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/weblinkFilingInquiry
       - type: ProductionEnvironment
         url: https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/weblinkFilingInquiry
@@ -66,7 +66,7 @@ apis:
     properties:
       - type: Documentation
         url: https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api
-      - type: TestEnvironment
+      - type: Sandbox
         url: https://trade-test.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/createWeblinkFiling
       - type: ProductionEnvironment
         url: https://trade.cbp.dhs.gov/ace/aes/aesdirect-ui/secured/createWeblinkFiling
