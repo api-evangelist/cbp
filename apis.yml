@@ -10,10 +10,22 @@ description: >-
   Commercial Environment (ACE), the Automated Export System (AES / AESDirect),
   and the Advance Passenger Information System (APIS/eAPIS).
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cbp.png
 url: https://raw.githubusercontent.com/api-evangelist/cbp/refs/heads/main/apis.yml
 created: '2026-06-13'
-modified: '2026-06-13'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 tags:
   - US Government
@@ -122,28 +134,6 @@ apis:
       - type: Portal
         url: https://eapis.cbp.dhs.gov
 
-  - aid: cbp:cbp-public-data-portal
-    name: CBP Public Data Portal
-    description: >-
-      A free public resource providing downloadable statistical datasets used to
-      generate charts and dashboards published on CBP.gov. Covers trade
-      statistics, enforcement data, traveler and conveyance statistics, drug
-      seizures, intellectual property rights seizures, and agriculture
-      enforcement data.
-    humanURL: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
-    baseURL: https://www.cbp.gov
-    tags:
-      - Statistics
-      - Trade Data
-      - Open Data
-      - Enforcement
-      - Datasets
-    properties:
-      - type: Documentation
-        url: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
-      - type: TradeStatistics
-        url: https://www.cbp.gov/newsroom/stats/trade
-
 common:
   - type: DomainSecurity
     url: security/cbp-domain-security.yml
@@ -169,6 +159,8 @@ common:
     url: rate-limits/cbp-rate-limits.yml
   - type: FinOps
     url: finops/cbp-finops.yml
+  - type: News
+    url: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
