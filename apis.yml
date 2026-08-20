@@ -35,6 +35,15 @@ tags:
   - Export
   - Border Protection
   - Tariff
+  - Manifests
+tags_raw:
+  - US Government
+  - Trade
+  - Customs
+  - Import
+  - Export
+  - Border Protection
+  - Tariff
   - Manifest
 apis:
   - aid: cbp:aesdirect-weblink-inquiry-api
@@ -74,6 +83,12 @@ apis:
       - AES
       - AESDirect
       - Electronic Export Information
+      - Filings
+    tags_raw:
+      - Export
+      - AES
+      - AESDirect
+      - Electronic Export Information
       - Filing
     properties:
       - type: Documentation
@@ -94,6 +109,14 @@ apis:
     humanURL: https://www.cbp.gov/trade/automated
     baseURL: https://ace.cbp.gov
     tags:
+      - Import
+      - Export
+      - ACE
+      - ABI
+      - EDI
+      - CATAIR
+      - Manifests
+    tags_raw:
       - Import
       - Export
       - ACE
@@ -122,6 +145,12 @@ apis:
     humanURL: https://www.cbp.gov/travel/travel-industry-personnel/advance-passenger-information-system
     baseURL: https://eapis.cbp.dhs.gov
     tags:
+      - Passenger
+      - Travel
+      - eAPIS
+      - Manifests
+      - Aviation
+    tags_raw:
       - Passenger
       - Travel
       - APIS
