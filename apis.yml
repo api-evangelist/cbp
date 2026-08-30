@@ -46,7 +46,7 @@ tags:
   - Export
   - Border Protection
   - Tariff
-  - Manifests
+  - Manifest
 tags_raw:
   - US Government
   - Trade
@@ -126,7 +126,7 @@ apis:
       - ABI
       - EDI
       - CATAIR
-      - Manifests
+      - Manifest
     tags_raw:
       - Import
       - Export
@@ -159,7 +159,7 @@ apis:
       - Passenger
       - Travel
       - eAPIS
-      - Manifests
+      - Manifest
       - Aviation
     tags_raw:
       - Passenger
