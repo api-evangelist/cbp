@@ -70,3 +70,34 @@ plans:
       - Submit crew manifests
       - Receive submission confirmation numbers
       - Bulk XML and EDIFACT PAXLST submission
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free — AESDirect WebLink (Certified Partners)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Free — ACE Secure Data Portal (Registered Trade Users)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Free — ABI/EDI (Licensed Filers)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Free — eAPIS (Carriers and Private Aviation)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
