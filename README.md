@@ -1,4 +1,4 @@
-# CBP — U.S. Customs and Border Protection
+# CBP
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,28 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-APIs.json provider profile for U.S. Customs and Border Protection (CBP).
+U.S. Customs and Border Protection (CBP) is the nation's largest law enforcement agency and a major revenue-collecting authority, responsible for facilitating legitimate international trade and travel while enforcing trade laws, collecting duties, and securing the border. CBP provides REST APIs and EDI-based interfaces for trade data, import statistics, tariff schedules, ACE reporting, and automated import/export manifests through the Automated Commercial Environment (ACE), the Automated Export System (AES / AESDirect), and the Advance Passenger Information System (APIS/eAPIS).
 
-CBP is the nation's largest law enforcement agency and a primary revenue-collecting authority, responsible for facilitating legitimate international trade and travel while enforcing trade laws and securing the border. This catalog covers CBP's REST and EDI-based APIs for trade automation, export information filing, passenger manifest submission, and public trade statistics.
+**Areas:** US Government · Trade · Customs · Import · Export · Border Protection · Tariffs · Manifests
 
-## APIs Cataloged
+## CBP on APIs.io
 
-- **AESDirect WebLink Inquiry API** — Query Electronic Export Information (EEI) filings programmatically via HTTP POST.
-- **AESDirect WebLink Submission API** — Submit EEI filings directly to AESDirect from certified third-party applications.
-- **Automated Commercial Environment (ACE) / ABI** — U.S. Single Window for import/export trade reporting via EDI (ANSI X12 / UN/EDIFACT).
-- **eAPIS — Advance Passenger Information System** — Submit passenger and crew manifests for international travel via web portal, XML upload, or EDI.
-- **CBP Public Data Portal** — Downloadable statistical datasets covering trade, enforcement, traveler, and seizure statistics.
+Everything profiled for CBP is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cbp/](https://apis.io/providers/cbp/)** — or go straight to one of the APIs or properties below.
 
-## Resources
+### APIs (4)
 
-- [CBP Homepage](https://www.cbp.gov)
-- [ACE Trade Automation](https://www.cbp.gov/trade/automated)
-- [AESDirect WebLink Inquiry API](https://www.cbp.gov/trade/automated/aesdirect-weblink-inquiry-api)
-- [AESDirect WebLink Submission API](https://www.cbp.gov/trade/automated/aesdirect-weblink-submission-api)
-- [eAPIS](https://eapis.cbp.dhs.gov)
-- [CBP Public Data Portal](https://www.cbp.gov/newsroom/stats/cbp-public-data-portal)
-- [GitHub (US-CBP)](https://github.com/US-CBP)
+- [AESDirect WebLink Inquiry API](https://apis.io/apis/cbp/aesdirect-weblink-inquiry-api/) — A web service that allows certified third-party applications to query Electronic Export Information (EEI) filings previously submitted to AESDirect via HTTP…
+- [AESDirect WebLink Submission API](https://apis.io/apis/cbp/aesdirect-weblink-submission-api/) — A web service that allows certified third-party Internet applications to pass Electronic Export Information (EEI) data directly into AESDirect via HTTP…
+- [Automated Commercial Environment (ACE) — EDI / ABI](https://apis.io/apis/cbp/ace-automated-commercial-environment/) — The U.S. Single Window for import and export trade reporting. The Automated Broker Interface (ABI) lets licensed customs brokers and self-filers transmit…
+- [eAPIS — Advance Passenger Information System](https://apis.io/apis/cbp/eapis-advance-passenger-information/) — A CBP web-based application for commercial and private carriers to electronically submit inbound and outbound traveler manifest data. Supports on-screen…
 
-## Maintainer
+### Published properties
 
-Kin Lane — kin@apievangelist.com
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Cbp Context](https://apis.io/jsonld/cbp/cbp-context/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cbp Domain Security](https://apis.io/security/cbp/cbp-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Cbp Plans Pricing](https://apis.io/plans/cbp/cbp-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Cbp Rate Limits](https://apis.io/rate-limits/cbp/cbp-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Cbp Finops](https://apis.io/finops/cbp/cbp-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cbp.gov)
+- [Documentation](https://www.cbp.gov/trade/automated)
+- [Pricing](https://www.cbp.gov/trade/automated/ace-faq)
+- [Blog](https://www.cbp.gov/newsroom)
+- [Status](https://www.cbp.gov/trade/automated/ace-support)
+
+## API Evangelist rating
+
+**Kin Score 21.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 72.3 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 25.0 |
+| Access clarity | 18.4 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cbp/](https://apis.io/providers/cbp/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CBP: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cbp/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
